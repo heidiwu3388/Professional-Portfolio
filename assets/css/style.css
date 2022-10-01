@@ -1,20 +1,22 @@
-
 :root {
     /* theme color */
     --dark: #262a3b;
     --light: #99b2dd;
-    --lighter: #f9dec9;
+    --lighter: #e2f5fe;
     /* font size */
     --big: 40px;
     --medium: 30px;
     --small: 20px;
+    --smaller: 17px;
+    /* margin */
+    --frame-bottom-margin: 30px;
 }
 
-/
 body {
     color: var(--dark);
-    background-color: var(--lighter);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: red; */
+    background-color: var(--lighter);
 }
 
 h1 {
@@ -78,7 +80,7 @@ header {
     /* box settings */
     height: 300px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: var(--frame-bottom-margin);
     /* backgroud settings */
     background-image: url("../images/banner-1010.jpg");
     background-size: cover;
@@ -104,4 +106,146 @@ header {
 
 }
 
+#container {
+    /* flexbox setting */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.card {
+    /* box settings */
+    width: 100%;
+    margin: 0;    
+    margin-bottom: var(--frame-bottom-margin);
+
+    /* flexbox settings */
+    display: flex;
+    flex-direction: row;
+}
+
+/* styling for the title of "About Me", "Work" and "Contact Me" */
+.card-title {
+    /* box settings */
+    width: 20%;
+    margin: 0;
+    padding: 10px;
+    border-right: 5px solid var(--dark);
+    /* text settings */
+    text-align: right;
+
+    /* testing */
+    border: 3px solid black;
+}
+
+.card-details {
+    /* box settings */
+    width: 80%;
+    margin: 0;
+    padding: 0px 20px;
+
+    /* flexbox settings */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* testing */
+    border: 3px solid black;
+}
+
+#my-photo-frame {
+    /* box settings */
+    width: 25%;
+    margin: 0;
+    height: 200px;
+    /* color setting */
+    background-color: var(--light);
+}
+
+#description {
+    /* box settings */
+    width: 75%;
+    margin: 0;
+    padding: 10px;
+    /* text settings */
+    text-align: left;
+    font-size: var(--smaller);
+    line-height: 1.2;
+    /* testing */
+    border: 3px solid var(--light);
+
+}
+
+.project-frame {
+    /* box settings */
+    width: 50%;
+    height: 200px;
+    margin: 0;
+    padding: 10px 10px 0 0;
+    border: 3px solid red;
+   
+}
+
+/* bigger first project */
+#project-frame-1 {
+    /* bigger box*/
+    width: 100%;
+    height: 300px;
+    padding-top: 0;
+}
+
+.project-photo {
+    width: 100%;
+    height: 100%;
+    /* testing */
+    border: 3px solid green;
+    background-color: pink;
+    /* set position to relative to contain an absolute project-details */
+    position: relative;
+    /* backgroud image settings */
+    background-size: cover;
+    background-position: center;
+}
+
+.project-details {
+    /* set position to the bottom left project-photo */
+     position: absolute;
+     left: 0;
+     bottom: 20px ;
+    /* color setting */
+    color: var(--dark);
+    background-color: var(--light);
+    /* box settings */
+    margin: 0;
+    padding: 10px;
+}
+
+/* set backgroup image for each project */
+#project-photo-1 {
+    background-image: url("../images/CSS_Snippet_thumbnail.jpg");
+}
+#project-photo-2 {
+    background-image: url("../images/Horiseon_thumbnail.jpg");
+}
+
+
+#contact-list {
+    /* box settings */
+    width: 100%;
+    margin:0;
+    
+    /* flexbox settings */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#contact-list a {
+    /* text settings */
+    font-size: var(--small);
+    /* color settings */    
+    color: var(--dark);
+    background-color: var(--lighter);
+}
