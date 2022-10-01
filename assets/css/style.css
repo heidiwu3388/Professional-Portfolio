@@ -1,0 +1,74 @@
+
+:root {
+    /* theme color */
+    --dark: #262a3b;
+    --light: #99b2dd;
+    --lighter: #f9dec9;
+    /* font size */
+    --big: 40px;
+    --medium: 30px;
+    --small: 20px;
+}
+
+/
+body {
+    color: var(--dark);
+    background-color: var(--lighter);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    /* flexbox settings */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* color settings */
+    background-color: var(--dark);
+    /* size settings */
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: var(--big);
+}
+
+h2 {
+    font-size: var(--medium);
+}
+
+h3 {
+    font-size: var(--small);
+}
+
+#my-name {
+    /* color settings */
+    color: var(--dark);
+    background-color: var(--light);
+    /* box settings */
+    width: 250px;
+    margin: 0px;
+    padding: 10px 10px;
+    /* text settings */
+    text-align: right;
+}
+
+#menu {
+    /* flexbox settings */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* box settings */
+    width: 50%;
+    margin:0;
+    padding: 10px;
+}
+
+#menu a {
+    /* text settings */
+    font-size: var(--medium);
+    /* color settings */    
+    color: var(--light);
+    background-color: var(--dark);
+}
