@@ -17,18 +17,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header {
-    /* flexbox settings */
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* color settings */
-    background-color: var(--dark);
-    /* size settings */
-    margin: 0px;
-    padding: 20px 0px;
-}
-
 h1 {
     font-size: var(--big);
 }
@@ -41,14 +29,26 @@ h3 {
     font-size: var(--small);
 }
 
+header {
+    /* flexbox settings */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* color settings */
+    background-color: var(--dark);
+    /* size settings */
+    margin: 0px;
+    padding: 20px 0px;
+}
+
 #my-name {
     /* color settings */
     color: var(--dark);
     background-color: var(--light);
     /* box settings */
-    width: 250px;
+    width: 300px;
     margin: 0px;
-    padding: 10px 10px;
+    padding: 10px;
     /* text settings */
     text-align: right;
 }
@@ -72,3 +72,36 @@ h3 {
     color: var(--light);
     background-color: var(--dark);
 }
+
+/* style the hero image */
+#hero-image {
+    /* box settings */
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    /* backgroud settings */
+    background-image: url("../images/banner-1010.jpg");
+    background-size: cover;
+    background-position: center;
+    /* set position to relative to contain an absolute subtitle  */
+    position: relative;
+}
+
+#sub-title {
+    /* set position to the bottom right of the hero image */
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    /* color settings */
+    color: var(--dark);
+    background-color: var(--light);
+    /* box settings */
+    width: 400px;
+    margin: 0px;
+    padding: 10px;
+    /* text settings */
+    text-align: left;
+
+}
+
+
