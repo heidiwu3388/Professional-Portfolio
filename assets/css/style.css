@@ -62,7 +62,7 @@ header {
     justify-content: space-around;
     align-items: center;
     /* box settings */
-    width: 50%;
+    width: 60%;
     margin:0;
     padding: 10px;
 }
@@ -133,9 +133,6 @@ header {
     border-right: 5px solid var(--dark);
     /* text settings */
     text-align: right;
-
-    /* testing */
-    border: 3px solid black;
 }
 
 .card-details {
@@ -147,33 +144,44 @@ header {
     /* flexbox settings */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-
-    /* testing */
-    border: 3px solid black;
 }
+
+/* NO wrap for "About Me" and "Contact Me"*/
+#card-details-about-me, #card-details-contact-me {
+    flex-wrap: nowrap;
+}
+/* wrap for "Work" */
+#card-details-work {
+    flex-wrap: wrap;
+}
+
 
 #my-photo-frame {
     /* box settings */
-    width: 25%;
+    width: 200px; /* fixed width for profile picture and auto width for description */
     margin: 0;
     height: 200px;
-    /* color setting */
-    background-color: var(--light);
+}
+
+#my-photo {
+    /* photo size */
+    width: 200px;
+    height: 200px;
+    /* set the backgroud image to profile picture */
+    background-image: url(../images/my_profile_picture.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #description {
     /* box settings */
-    width: 75%;
+    width: auto; /* fixed width for profile picture and auto width for description */
     margin: 0;
     padding: 10px;
     /* text settings */
     text-align: left;
     font-size: var(--smaller);
     line-height: 1.2;
-    /* testing */
-    border: 3px solid var(--light);
-
 }
 
 .project-frame {
@@ -182,8 +190,6 @@ header {
     height: 200px;
     margin: 0;
     padding: 10px 10px 0 0;
-    border: 3px solid red;
-   
 }
 
 /* bigger first project */
@@ -197,9 +203,6 @@ header {
 .project-photo {
     width: 100%;
     height: 100%;
-    /* testing */
-    border: 3px solid green;
-    background-color: pink;
     /* set position to relative to contain an absolute project-details */
     position: relative;
     /* backgroud image settings */
@@ -226,6 +229,15 @@ header {
 }
 #project-photo-2 {
     background-image: url("../images/Horiseon_thumbnail.jpg");
+}
+#project-photo-3 {
+    background-image: url("../images/password_generator_thumbnail.jpg");
+}
+#project-photo-4 {
+    background-image: url("../images/coming_soon_thumbnail.jpg");
+}
+#project-photo-5 {
+    background-image: url("../images/coming_soon_thumbnail.jpg");
 }
 
 
