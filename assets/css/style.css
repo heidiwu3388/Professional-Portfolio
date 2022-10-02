@@ -64,10 +64,12 @@ header {
     /* box settings */
     width: 60%;
     margin:0;
-    padding: 10px;
+    padding: 25px;
 }
 
 #menu a {
+    /* box setting */
+    padding: 5px;
     /* text settings */
     font-size: var(--medium);
     /* color settings */    
@@ -127,9 +129,9 @@ header {
 /* styling for the title of "About Me", "Work" and "Contact Me" */
 .card-title {
     /* box settings */
-    width: 20%;
+    width: 25%; /* make it up 100% with .card-details */
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     border-right: 5px solid var(--dark);
     /* text settings */
     text-align: right;
@@ -137,7 +139,7 @@ header {
 
 .card-details {
     /* box settings */
-    width: 80%;
+    width: 75%; /* make it up 100% with .card-title */
     margin: 0;
     padding: 0px 20px;
 
@@ -177,7 +179,7 @@ header {
     /* box settings */
     width: auto; /* fixed width for profile picture and auto width for description */
     margin: 0;
-    padding: 10px;
+    padding: 0 10px;
     /* text settings */
     text-align: left;
     font-size: var(--smaller);
@@ -259,9 +261,77 @@ header {
 }
 
 #contact-list a {
+    /* box settings */
+    padding: 20px 5px;
     /* text settings */
     font-size: var(--small);
     /* color settings */    
     color: var(--dark);
     background-color: var(--lighter);
 }
+
+/* style for screen size of 992px or smaller (tablet) */
+@media screen and (max-width: 992px) {
+    /* put the Name on top of the Menu */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #my-name {
+        text-align: center;
+    }
+    #menu {
+        width: 100%;
+    }
+
+}
+/* style for screen size of 768px or smaller (mobile phone) */
+@media screen and (max-width: 768px) {
+    /* vertical menu */
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* put card title on top of card details*/
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-title {
+        /* remove of the line on the right */
+        border-right: 0;
+        /* box setting */
+        width: 100%;
+        /* text setting */
+        text-align: center;
+        
+    }
+    .card-details {
+        width: 100%;
+    }
+
+
+    /* settings for placing the profile picture in the center */
+    #my-photo-frame {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+  
+    .project-frame {
+        width: 100%;
+        height: 300px;;
+    }
+    
+    #card-details-about-me {
+        flex-direction: column;
+    }
+    
+    #contact-list  {
+        flex-direction: column;
+    }
+}
+
+  
