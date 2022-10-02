@@ -201,8 +201,12 @@ header {
 }
 
 .project-photo {
+    /* box settings */
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 5px solid var(--light);
     /* set position to relative to contain an absolute project-details */
     position: relative;
     /* backgroud image settings */
