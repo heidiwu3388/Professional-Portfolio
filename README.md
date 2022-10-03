@@ -13,7 +13,7 @@ Go to https://heidiwu3388.github.io/Professional-Portfolio/ to see my portfolio 
 
 ## Screenshot
 
-![_Users_Local_Heidi_Code_Professional-Portfolio_index html](https://user-images.githubusercontent.com/111156269/193440717-4f7dea83-2491-4569-9219-6a59fa76ffee.png)
+![_Users_Local_Heidi_Code_Professional-Portfolio_index html (1)](https://user-images.githubusercontent.com/111156269/193505007-da78ee28-87b4-44b1-a106-c97e528a3353.png)
 
 ## Credits
 
