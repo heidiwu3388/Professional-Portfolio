@@ -198,6 +198,8 @@ header {
     height: 200px;
     margin: 0;
     padding: 10px 10px 0 0;
+    /* set position to relative to contain an absolute project-details */
+    position: relative;
 }
 
 /* bigger first project */
@@ -215,8 +217,6 @@ header {
     margin: 0;
     padding: 0;
     border: 5px solid var(--light);
-    /* set position to relative to contain an absolute project-details */
-    position: relative;
     /* backgroud image settings */
     background-size: cover;
     background-position: center;
