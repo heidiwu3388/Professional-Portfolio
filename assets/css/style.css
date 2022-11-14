@@ -244,7 +244,8 @@ header {
 
 /* set backgroup image for each project */
 #project-photo-1 {
-    background-image: url("../images/CSS_Snippet_thumbnail.jpg");
+    background-image: url("../images/LetsGoDIY_thumbnail.jpg");
+    background-position: left top;
 }
 #project-photo-2 {
     background-image: url("../images/Horiseon_thumbnail.jpg");
