@@ -243,18 +243,18 @@ header {
 }
 
 /* set backgroup image for each project */
-#project-photo-1 {
+#project-photo-1{
+    background-image: url("../images/EvChargeNGo_thumbnail.jpg");
+}
+#project-photo-2 {
     background-image: url("../images/LetsGoDIY_thumbnail.jpg");
     background-position: left top;
 }
-#project-photo-2 {
+#project-photo-3 {
     background-image: url("../images/Horiseon_thumbnail.jpg");
 }
-#project-photo-3 {
-    background-image: url("../images/password_generator_thumbnail.jpg");
-}
 #project-photo-4 {
-    background-image: url("../images/coming_soon_thumbnail.jpg");
+    background-image: url("../images/password_generator_thumbnail.jpg");
 }
 #project-photo-5 {
     background-image: url("../images/coming_soon_thumbnail.jpg");
